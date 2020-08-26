@@ -18,14 +18,14 @@
   }
   .title-position {
     position:absolute;
-    left:40%;
+    left:10%;
     top:5%
   }
   .construction-title{
     position:absolute;
     left:40%;
-    top:50%;
-    color: #e10534;
+    top:5%;
+    font-size: 1rem
   }
   .title{
     font-size: 1.5rem;
@@ -34,7 +34,7 @@
     font-variant-caps: normal;
     font-variant-numeric: normal;
     font-variant-east-asian: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-stretch: normal;
     line-height: normal;
     font-family: Arial;
@@ -92,4 +92,69 @@
     position: relative;
     z-index: 100;
     background-color: var(--backgroundColor);
+}
+
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  /* position: relative; */
+  display: inline-block;
+  font-size: 1rem
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.16);  z-index: 1;
+  top: 25px;
+  left: -25px;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  top: 8%;
+}
+
+.dropdown-content a:hover {background-color: #ffffff;  border-radius: 10px;}
+
+.dropdown:hover .dropdown-content {display: block;  border-radius: 10px;}
+
+.dropdown:hover .dropbtn {background-color: #ffffff;  border-radius: 10px;}
+
+.ft-1-rem{
+  font-size: 1rem;
+}
+.aboutus{
+  position:absolute;
+  left:50%;
+  top:5%;
+  font-size: 1rem;
+  width: 50%;
+}
+.signIn{
+  position:absolute;
+  left:85%;
+  top:5%;
+  font-size: 1rem;
+  width: 50%;
+}
+.arrow-font{
+  font-size: 1.25rem;
+}
+.pd-10px{
+  padding: 10px;
+}
+.pointer{
+  cursor: pointer;
 }

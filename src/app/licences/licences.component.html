@@ -1,0 +1,56 @@
+<header class="header">
+    <a href="/landing" class="ft-1-rem"><label class="app-title" >HSX360</label>
+    </a>
+</header>
+
+<section class="bg-white py-3">
+    <div class="container">
+        <div class="row justify-content-center p-4">
+            <div class="col-12 col-lg-8 text-center">
+                <h2>Account Pricing Tiers</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="offset-lg-1 offset-md-1 offset-sm-1  col-lg-10  col-md-10 col-sm-10 col-12 Mt-30 remove-lp-rp rm-padding">
+
+    <div class="row">
+        <section class="bg-white text-center pt-3 pb-2">
+            <div class="container">
+                <div class="row pb-0 justify-content-center ">
+                    <div *ngFor="let licence of licenceList" class="desktop col-12 col-md-6 col-lg-3 pb-3 pb-lg-0 cloud">
+                        <div class="tier-1 tier-color "></div>
+                        <div class="bg-white border p-4 tier cloud">
+                            <div class="tier-level py-1 text-center">
+                                <h3 class="text-orange">{{licence.licenseType}}</h3>
+                                <!-- <span class="acct gray-600">1 Account</span> -->
+                            </div>
+                            <div class="tier-info mt-1 mb-4 text-center">
+                                <h4 class="tier-price mb-0 pt-1"><sup>£</sup>{{licence.licenseAmount}}</h4>
+                                <span class="monthly gray-600">yearly</span>
+                            </div>
+                            <div class="tier-desc mt-4 text-center">
+                                <p class="mt-0 mb-1 pb-2"> {{licence.description}}</p>
+                                
+                                <span class="monthly gray-600">Clinical User Count</span>
+                                <p class="mt-0 mb-1 pb-2"> {{licence.clinicalUserCount}}</p>
+                                
+                                <span class="monthly gray-600">Non-Clinical User Count</span>
+                                <p class="mt-0 mb-1 pb-2"> {{licence.nonClinicalUserCount}}</p>
+                               
+                                <span class="monthly gray-600">Admin User Count</span>
+                                <p class="mt-0 mb-1 pb-2"> {{licence.adminUserCount}}</p>
+
+                                <a href="/conform"
+                                    class="btn btn-outline-primary mt-3 px-3 d-block">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+</div>
